@@ -18,6 +18,5 @@ func goDotEnvVariable(key string) string {
 
 func main() {
 	log.Println("Starting Application!!! Lets Go!")
-	TELEGRAM_APITOKEN := goDotEnvVariable("TELEGRAM_APITOKEN")
-	TelegramBotApi.ExecuteBot(TELEGRAM_APITOKEN)
+	TelegramBotApi.ExecuteBot(goDotEnvVariable("TELEGRAM_APITOKEN"))
 }
